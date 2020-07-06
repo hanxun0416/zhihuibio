@@ -1,0 +1,10 @@
+/* 最新最全最好的Bootstrap模板：http://www.bootstrapmb.com */
+@charset "utf-8";
+/* CSS Document */
+
+/*组件标题分割线-黄色*/
+.splitline {
+	width:30px;
+	border-top: 3px solid #fbc021;
+	margin:10px;
+}

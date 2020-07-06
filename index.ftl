@@ -1,9 +1,14 @@
 <#include "module/macro.ftl">
 <@head title="${blog_title!}"/>
-<#include "module/sidebar.ftl">
-<div class="main">
-    <#include "module/page-top.ftl">
-    <div class="autopagerize_page_element">
+<#--  <#include "module/sidebar.ftl">  -->
+ <#include "module/page-top.ftl">
+ <#include "module/header-mo.ftl">
+<section id="main">
+    <section id="main-content">
+     <#include "module/sidebar_1.ftl">
+     <#include "module/pic_center.ftl">
+    </section>
+    <#--  <div class="autopagerize_page_element">
         <div class="content">
             <#include "module/post_entry.ftl">
             <#if posts.totalPages gt 1>
@@ -25,6 +30,6 @@
                 </@paginationTag>
             </#if>
         </div>
-    </div>
-</div>
+    </div>  -->
+</section>
 <@footer></@footer>

@@ -96,6 +96,28 @@
         <script src="${theme_base!}/source/js/ScrollPic.js" type="text/javascript" charset="utf-8"></script>
 
    <script type="text/javascript">
+
+
+  //首页新闻中心选项卡切换
+    $(document).ready(function(e) {
+    	/* var ind=0;
+    	$(".newssel_nei_op").eq(ind).addClass("on"); 
+    	$(".newsxxk").hide();
+    	$(".newsxxk").eq(ind).show(); */
+        $(".newssel_nei_op").click(function(){
+    		/* ind=$(this).index(); */
+    	    $(this).addClass("on").siblings().removeClass("on");
+    		/* $(".newsxxk").hide(); */
+    		/* $(".newsxxk").eq(ind).show();	 */
+    		var newsxxkId = "#newsxxk_"+$(this).attr('id');
+    		/* alert(newsxxkId); */
+    		$(newsxxkId).siblings().addClass("hide")
+    		$(newsxxkId).removeClass("hide");
+    	});
+    });
+    
+    
+
      
   window.onload=function(){
 
@@ -252,6 +274,18 @@
             cc1.autoPlayTime = 0.03; //自动播放间隔时间(秒)
             cc1.initialize(); //初始化
         });
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

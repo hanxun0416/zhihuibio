@@ -7,7 +7,12 @@
     <section id="main-content">
      <#include "module/sidebar_1.ftl">
      <#include "module/pic_center.ftl">
+     <#include "module/choose_us.ftl">
+     <#include "module/company_info.ftl">
+     <#include "module/index_news.ftl">
+    
     </section>
+ <#include "module/footer.ftl">
     <#--  <div class="autopagerize_page_element">
         <div class="content">
             <#include "module/post_entry.ftl">
